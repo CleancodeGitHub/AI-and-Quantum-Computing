@@ -1,0 +1,96 @@
+/* Apply box-sizing and reset margin/padding globally */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Set background color for the entire body */
+body {
+  background: var(--color-bg);
+}
+
+/* Remove default link styles */
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+/* Define gradient background styles */
+.gradient__bg {
+  /* Standard syntax for radial gradient background */
+  background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+}
+
+/* Define gradient text styles */
+.gradient__text {
+  /* Apply gradient background to text */
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add padding to sections for consistent spacing */
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+/* Add margin to sections for consistent spacing */
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+/* Add scale-up animation to center elements */
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Keyframes for scale-up animation */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* Media query for smaller screens (max-width: 700px) */
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+/* Media query for even smaller screens (max-width: 550px) */
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}

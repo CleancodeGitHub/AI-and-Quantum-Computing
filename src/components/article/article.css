@@ -1,0 +1,65 @@
+/* Styles for the entire article container */
+.tech__blog-container_article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-footer);
+}
+
+/* Styles for the image container within the article */
+.tech__blog-container_article-image {
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+}
+
+/* Styles for the image within the image container */
+.tech__blog-container_article-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for the content container within the article */
+.tech__blog-container_article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  height: 100%;
+}
+
+/* Styles for the date paragraph within the content */
+.tech__blog-container_article-content p {
+  font-family: var(--font-family);
+  font-size: 11.65px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #fff;
+}
+
+/* Styles for the title heading within the content */
+.tech__blog-container_article-content h3 {
+  font-family: var(--font-family);
+  font-size: 25.11px;
+  font-weight: 800;
+  line-height: 30.30px;
+  color: #fff;
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+
+/* Styles for the "Read Full Article" paragraph within the content */
+.tech__blog-container_article-content p:last-child {
+  cursor: pointer;
+}
+
+/* Media query for smaller screens (max-width: 550px) */
+@media screen and (max-width: 550px) {
+
+  /* Adjust styles for the title heading on smaller screens */
+  .tech__blog-container_article-content h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

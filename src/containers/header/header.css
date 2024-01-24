@@ -1,0 +1,182 @@
+/* Main container for the tech header */
+.tech__header {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Content section of the tech header */
+.tech__header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin-right: 5rem;
+}
+
+/* Heading style for emphasizing tech innovation */
+.tech__header-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+}
+
+/* Paragraph style for general text content */
+.tech__header-content p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--color-text);
+
+  margin-top: 1.5rem;
+}
+
+/* Input and button section for email subscription */
+.tech__header-content__input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling for email input */
+.tech__header-content__input input {
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  padding: 0 1rem;
+  outline: none;
+  color: #fff;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Styling for subscription button */
+.tech__header-content__input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: #FF4820;
+  border: 2px solid #FF4820;
+  padding: 0 1rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Section for people image and text */
+.tech__header-content__people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+
+  margin-top: 2rem;
+}
+
+/* Styling for people image to make it responsive */
+.tech__header-content__people img {
+  width: 100%; /* Make the image responsive */
+  max-width: 181.79px; /* Set a max width to maintain aspect ratio */
+  height: auto; /* Automatically adjust height */
+}
+
+/* Styling for accompanying text */
+.tech__header-content__people p {
+  margin: 0 0 0 1rem;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Image section styling for tech header */
+.tech__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the image within the tech header to make it responsive */
+.tech__header-image img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Automatically adjust height */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1050px) {
+  .tech__header {
+    flex-direction: column;
+  }
+
+  .tech__header-content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tech__header-content h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .tech__header-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tech__header-content__people {
+    flex-direction: column;
+  }
+
+  .tech__header-content__people p {
+    margin: 0;
+  }
+
+  .tech__header-content__input input,
+  .tech__header-content__input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .tech__header-content h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .tech__header-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .tech__header-content__input input,
+  .tech__header-content__input button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

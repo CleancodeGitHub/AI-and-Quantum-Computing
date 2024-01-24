@@ -1,0 +1,67 @@
+/* Container for the main features section */
+.tech__features {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* Styling for the heading section containing title and call-to-action */
+.tech__features-heading {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  margin-right: 5rem;
+}
+
+/* Styling for the main title in the heading section */
+.tech__features-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+}
+
+/* Styling for the subtext in the heading section */
+.tech__features-heading p {
+  color: var(--color-subtext);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  margin-top: 2rem;
+}
+
+/* Container for individual features, adjusting size and alignment */
+.tech__features-container {
+  flex: 1.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Responsive design for smaller screens (tablet and below) */
+@media screen and (max-width: 990px) {
+  .tech__features {
+    flex-direction: column;
+  }
+
+  /* Adjusting margin for the heading section in smaller screens */
+  .tech__features-heading {
+    margin: 0 0 2rem 0;
+  }
+}
+
+/* Further adjustments for even smaller screens (mobile) */
+@media screen and (max-width: 550px) {
+
+  /* Adjusting font size for the main title in smaller screens */
+  .tech__features-heading h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

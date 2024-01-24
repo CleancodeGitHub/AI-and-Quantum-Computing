@@ -1,0 +1,123 @@
+/* This is the CSS code for the tech possibility section of a website */
+
+/* Define a flex container with a row direction */
+.tech__possibility {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Define the style for the image part of the section */
+.tech__possibility-image {
+  flex: 1;
+  /* Give equal width to the image and the content */
+  display: flex;
+  justify-content: flex-start;
+  /* Align the image to the left */
+  align-items: center;
+  /* Center the image vertically */
+
+  margin-right: 2rem;
+  /* Add some space between the image and the content */
+}
+
+/* Set the image size to fill the container */
+.tech__possibility-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Define the style for the content part of the section */
+.tech__possibility-content {
+  flex: 1;
+  /* Give equal width to the image and the content */
+  display: flex;
+  justify-content: flex-end;
+  /* Align the content to the right */
+  align-items: flex-start;
+  /* Align the content to the top */
+  flex-direction: column;
+  /* Arrange the content elements vertically */
+}
+
+/* Define the style for the subheadings */
+.tech__possibility-content h4 {
+  font-family: var(--font-family);
+  /* Use a custom font family */
+  font-weight: 500;
+  /* Use a medium font weight */
+  font-size: 16px;
+  /* Use a 16px font size */
+  line-height: 30px;
+  /* Use a 30px line height */
+  color: #71E5FF;
+  /* Use a light blue color */
+}
+
+/* Change the color of the last subheading to a light orange */
+.tech__possibility-content h4:last-child {
+  color: #ff8A71;
+}
+
+/* Define the style for the main heading */
+.tech__possibility-content h1 {
+  font-family: var(--font-family);
+  /* Use the same font family as the subheadings */
+  font-weight: 800;
+  /* Use a bold font weight */
+  font-size: 34px;
+  /* Use a 34px font size */
+  line-height: 45px;
+  /* Use a 45px line height */
+  margin: 1rem 0;
+  /* Add some margin around the heading */
+}
+
+/* Define the style for the paragraph */
+.tech__possibility-content p {
+  color: var(--color-text);
+  /* Use a custom text color */
+  font-family: var(--font-family);
+  /* Use the same font family as the headings */
+  font-weight: 400;
+  /* Use a normal font weight */
+  font-size: 16px;
+  /* Use the same font size as the subheadings */
+  line-height: 30px;
+  /* Use the same line height as the subheadings */
+
+  margin-bottom: 2rem;
+  /* Add some bottom margin to the paragraph */
+}
+
+/* Use media queries to make the section responsive */
+
+/* For screens smaller than 950px, change the flex direction to column */
+@media screen and (max-width: 950px) {
+  .tech__possibility {
+    flex-direction: column;
+  }
+
+  /* Add some margin around the image */
+  .tech__possibility-image {
+    margin: 1rem 0;
+  }
+
+  /* Remove the fixed width and height of the image */
+  .tech__possibility-image img {
+    width: unset;
+    height: unset;
+  }
+
+  /* Add some top margin to the content */
+  .tech__possibility-content {
+    margin-top: 2rem;
+  }
+}
+
+/* For screens smaller than 700px, set the image width and height to 100% */
+@media screen and (max-width: 700px) {
+  .tech__possibility-image img {
+    width: 100%;
+    height: 100%;
+  }
+}
